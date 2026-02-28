@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 0 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,6 +36,6 @@ jobs:
 
       - name: Working
         env:
-          COOKIES: ${{ secrets.SMZDM_COOKIE }}
+          COOKIES: ${{r_sort_type=score; __ckguid=TcJ2euF7CIWx7JnPcWNIpyw5; device_id=20448530321760198046447486a462972367a6ac3e575a06e6198403b7; homepage_sug=e; smzdm_user_source=79986F8AB49807608AFF39787590A9DC; smzdm_user_view=D56CAC61C9270126793F287FCC04D975; s_his=%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF; ss_ab=ss38; ssmx_ab=mxss29; x-hng=lang=zh-CN&domain=www.smzdm.com; footer_floating_layer=0; ad_date=1; ad_json_feed=%7B%7D; sess=BA-0aRvLGlW2hdJdCcY1wEjExzo%2FlVy1m%2FFS7%2F2kUOjqKBFXtja87bHGt3p5FSeLU8xuOeRPeSqZdAR26NjCHlYcfBs6%2FGA03ezV06N2dX1w%2Fi2ESdbgnWM6gCb; user=yamaraja%7C4092500127; smzdm_id=4092500127; bannerCounter=%5B%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A1%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%5D; w_tsfp=ltvuV0MF2utBvS0Q7qjqlE2uED4hcD04h0wpEaR0f5thQLErU5mC04V6uMv+MnDW48xnvd7DsZoyJTLYCJI3dwNCQp2Yd9sXjQSRx9ciiNsXBxQ1EZneXwEbJOp15TNFKnhCNxS00jA8eIUd379yilkMsyN1zap3TO14fstJ019E6KDQmI5uDW3HlFWQRzaLbjcMcuqPr6g18L5a5T3c7QnzJV8lCroQgULG3CEcWC4jtxTucegIYU/5IsqvSqA=}}
           SERVERCHAN_SECRETKEY: ${{ secrets.SERVERCHAN_SECRETKEY }}
         run: python main.py #>SMZDM_Bot.log
